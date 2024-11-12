@@ -1,3 +1,15 @@
+<!--The head.html file is the most important extension point to influence the markup of the content. The easiest way to think of it is that this file is injected on the server side as part of the <head> HTML tag and is combined with the metadata coming from the content.
+
+The head.html should remain largely unchanged from the boilerplate and there are only very few legitimate reasons in a regular project to make changes. Those include remapping your project to a different base URL for the purposes of exposing your project in a different folder than the root folder of your domain on your CDN or to support legacy browsers which usually require scripts that are not loaded as modules.
+
+Adding marketing technology like Adobe Web SDK, Google Tag Manager or other 3rd party scripts to your head.html file is strongly advised against due to performance impacts. Adding inline scripts or styles to head.html is also not advisable for performance and code management reasons, see the section Scripts and Styles below for more information about handling scripts and styles.
+
+Please see the following examples.
+
+https://github.com/adobe/helix-project-boilerplate/blob/main/head.html
+https://github.com/adobe/express-website/blob/main/head.html
+https://github.com/adobe/business-website/blob/main/head.html -->
+
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script src="/scripts/aem.js" type="module"></script>
 <script src="/scripts/scripts.js" type="module"></script>
